@@ -1,0 +1,163 @@
+body{
+    padding: 8px;
+    margin: 5px;
+  }
+  .Navbar{
+    width: 100%;
+    min-height: 100px;
+    /* padding: 8px; */
+    /* background-color: aqua; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+  .list_Items{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    list-style-type: none;
+    gap: 45px;
+    font-weight: 500;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+  }
+  .list_Items>li:hover{
+    color: orangered;
+  }
+  .HeroMain{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 500px;
+    background-image: url('./assets/images/hm1-bg-1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .HeroBtn{
+    padding: 10px 30px;
+    color: #FF5151;
+    border-color:#FF5151;
+    font-weight: 500;
+    border: 1px solid #FF5151;
+    opacity: none;
+    cursor: pointer;
+    background-color: transparent;
+    background: linear-gradient(to right, #FF5151 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+  }
+  .HeroBtn:hover{
+    color: white;
+    background-position: left bottom;
+  }
+  .CartItems{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    /* width: 100%; */
+    min-height: 200px;
+    /* background-color: brown; */
+  }
+  .Carts{
+    min-width: 200px;
+    min-height: 300px;
+    text-align: left;
+    padding: 8px;
+    margin: 10px;
+    /* box-shadow:  2px 2px 4px  ; */
+    cursor: pointer;
+  }
+  .Carts:hover{
+    box-shadow: 2px 2px 10px ;
+  }
+
+  .Banner{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3%;
+    min-height: 400px;
+    background-image: url('./assets/Images/banner-bg-1.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    justify-content: center;
+  }
+
+  .Bannner_Content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .Bannner_Content>h1{
+    font-size: 40px;
+    color: sienna ;
+    margin-top: -20px;
+    margin-left: 550px;
+  }
+
+  .Discount_Img{
+    min-height: 560px;
+    width: 32%;
+    background-image: url('/src/assets/Images/banner-1.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  
+  .Footer{
+    margin: 50px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #F8F8F8;
+    min-height: 300px;
+  }
+
+  .FooterInp{
+    letter-spacing: 0.02px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #e3e3e3;
+    min-height: 40px;
+    min-width: 200px;
+    font-size: 16px;
+    color: #737373;
+    padding: 0 10px;
+    font-weight: 500;
+    outline: none;
+  }
+  .Footer_Icon{
+    position: relative;
+    top: -27px;
+    left: 170px;
+  }
+
+  /* Media Querry Section */
+  @media screen and (max-width:420px) {
+    .Navbar{
+      align-items: center;
+    }
+    .list_Items{
+      flex-grow: inherit;
+      flex-wrap: wrap;
+      align-items: center;
+      display: none;
+    }
+  .HeroMain{
+    flex-direction: column-reverse;
+    align-items: center;
+  
+  }
+  .HeroMainImage{
+    min-height: 200px;
+  }
+ 
+  
+  }
